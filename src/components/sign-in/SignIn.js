@@ -14,7 +14,7 @@ class SignIn extends Component {
 
     }
     handleSubmit = (event)=>{
-        event.defaultPrevented();
+        event.preventDefault();
         this.setState({email: '', password: ''})
     }
     handleChange = (event)=>{
@@ -44,8 +44,10 @@ class SignIn extends Component {
                         label='password'
                         required
                     />
-                    <Button type='submit' value='Submit Form' >SIGN IN</Button>
-                    <Button onCLick={signInWithGoogle} >{``}SIGN IN WITH GOOGLE{``}</Button>
+                    <div className='buttons'>
+                        <Button type='submit' value='Submit Form' >SIGN IN</Button>
+                        <Button onClick={signInWithGoogle} isGoogleSignIn>SIGN IN WITH GOOGLE</Button>
+                    </div>
                 </form>
             </div>
         )

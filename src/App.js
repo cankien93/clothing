@@ -7,7 +7,7 @@ import {auth, createUserProfileDocument} from './firebase/firebase.utils';
 
 import Homepage from './pages/homepage/HomePage';
 import ShopPage from './pages/shop/shop.component';
-import Header from '../src/components/header/header';
+import Header from '../src/components/custom-button/header/header';
 import SignInAndSingUp from '../src/pages/SigninAndSingup/SigninAndSignup';
 import CheckoutPage from './pages/checkout/checkout.component.jsx';
 import Contact from './pages/contact/contact.component.jsx'
@@ -71,3 +71,9 @@ const mapDispatchToprops = dispatch =>({
 })
 
 export default connect(mapStateToProps, mapDispatchToprops)(App);
+// const obj = {
+//   prop1: '1',
+//   prop2: '2',
+//   prop3: '3'
+// }
+// Object.keys(obj)

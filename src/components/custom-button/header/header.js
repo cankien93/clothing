@@ -1,17 +1,17 @@
 import React from 'react';
 import './header.scss';
 
-import {ReactComponent as Logo} from '../../asset/original.svg';
+import {ReactComponent as Logo} from '../../../asset/original.svg';
 import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
 import {createStructuredSelector} from 'reselect';
 
-import {auth} from '../../firebase/firebase.utils';
-import CartIcon from '../Cart-icon/cart-icon.component';
-import CartDropdown from '../cart-dropdown/cart-dropdown';
+import {auth} from '../../../firebase/firebase.utils';
+import CartIcon from '../../Cart-icon/cart-icon.component';
+import CartDropdown from '../../cart-dropdown/cart-dropdown';
 
-import { selectCartHidden } from '../../redux/cart/cart.selector';
-import { selectCurrentUser } from '../../redux/user/user.selector';
+import { selectCartHidden } from '../../../redux/cart/cart.selector';
+import { selectCurrentUser } from '../../../redux/user/user.selector';
 
 
 
